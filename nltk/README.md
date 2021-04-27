@@ -111,14 +111,13 @@ for sent in sentence_list:
 
 In the above code or script, we first create an empty finalsentence dictionary. The keys of this dictionary will be the sentences themselves and the values will be the corresponding scores of the sentences. Next, we loop through each sentence in the sentence_list and tokenize the sentence into words.
 We then check if the word exists in the word_frequencies dictionary. This check is performed since we created the sentence_list list from the mystring object; on the other hand, the word frequencies were calculated using the clear_textfile object, which doesn't contain any stop words, numbers, etc.
-We do not want very long sentences in the summary, therefore, we calculate the score for only sentences with less than 25 words (although you can increase or decrease this value as per requirment). Next, we check whether the sentence exists in the sentence_scores dictionary or not. If the sentence doesn't exist, we add it to the sentence_scores dictionary as a key and assign it the weighted frequency of the first word in the sentence, as its value. On the contrary, if the sentence exists in the dictionary, we simply add the weighted frequency of the word to the existing value.
+We do not want very long sentences in the summary, therefore, we calculate the score for only sentences with less than 25 words (although you can increase or decrease this value as per requirment). Next, we check whether the sentence exists in the finalsentence dictionary or not. If the sentence doesn't exist, we add it to the finalsentence dictionary as a key and assign it the weighted frequency of the first word in the sentence, as its value. On the contrary, if the sentence exists in the dictionary, we simply add the weighted frequency of the word to the existing value.
 
 ## Getting the Summary(Extracting summary)
 Now we have the  finalsentence dictionary that contains sentences with their corresponding score. To summarize the text article, we can take top N sentences with the highest scores. The following script retrieves top 8 sentences and prints them on the screen.
 <pre>
-import heapq
 sentsummary = heapq.nlargest(8, finalsentence, key=finalsentence.get)
 summary = ' '.join(sentsummary)
-print('Summery:-',summary)
+print('Summary:-',summary)
 </pre>
 In the script above, we use the heapq library and call its nlargest function to retrieve the top 8 sentences with the highest scores and better summary result.
