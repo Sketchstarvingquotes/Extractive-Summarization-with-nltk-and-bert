@@ -1,7 +1,7 @@
 # Extractive Text Summarization By using Nltk Python
 -------------
 
-### We will be using NLTK – the Natural Language Toolkit. 
+### We will be using NLTK – The Natural Language Toolkit. 
 
 ### Extractive Summarization
 In Extractive Summarization, we are identifying important phrases or sentences from the original text and extract only these phrases from the text, 
