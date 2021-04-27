@@ -28,7 +28,7 @@ pip install heapq_max
 </pre>
 **Note:-** It's better to download nltk support libraries ontime of importing it such as nltk.download('punkt') And nltk.download('stopwords') both are support libraries of nltk.
 
-### RegEx:-
+### RegEx
 In nltk extractive summarization we are using regex for text cleaning and removing unwanted text from article which we want to a summarize. 
 
 ### Corpus
