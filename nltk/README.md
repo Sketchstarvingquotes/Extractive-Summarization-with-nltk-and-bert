@@ -8,12 +8,16 @@ In Extractive Summarization, we are identifying important phrases or sentences f
 These extracted sentences would be the summary.
 
 ### required Installation
+<pre>
 python 3.6 vertion or above
 pip install nltk 
 pip install heapq_max
+</pre>
 
 **Note:-** commands used for installations as per OS above commands are based on windows)
-* importing required libraries
+
+### importing required libraries
+<pre>
 * imprt re
 * import nltk
 * import heapq  
@@ -21,7 +25,7 @@ pip install heapq_max
 * from nltk.tokenize import word_tokenize, sent_tokenize
 * nltk.download('punkt')
 * nltk.download('stopwords')
-
+</pre>
 **Note:-** It's better to download nltk support libraries ontime of importing it such as nltk.download('punkt') And nltk.download('stopwords') both are support libraries of nltk.
 
 ### RegEx:-
@@ -34,11 +38,12 @@ And also Corpus means a collection of text. It could be data sets of anything co
 ### Tokenizers
 Tokenization is the process by which a large quantity of text is divided into smaller parts called tokens.
 tokenizers – word, sentence, and regex tokenizer. In this project We will only use the word and sentence tokenizer this are the sub modules of  NLTK tokenize sentences.
-**Tokenization of words**
+#### Tokenization of words**
 We use the method word_tokenize() to split a sentence into words. The output of word tokenization can be converted to Data Frame for better text understanding in machine learning applications.
-**Tokenization of Sentences**
+#### Tokenization of Sentences**
 Sub-module available for the above is sent_tokenize it's used for when we need to count average words per sentence, For accomplishing such a task, we need both NLTK sentence tokenizer as well as NLTK word tokenizer to calculate the ratio, 
 Such output serves as an important feature for machine training as the answer would be numeric.
+
 # Implimentation Steps
 
 ## Preprocessing
@@ -91,6 +96,7 @@ max_freq = max(word_frequencies.values())
 </pre>
 ## Calculating Sentence Scores
 We have now calculated the weighted frequencies for all the words. Now is the time to calculate the scores for each sentence by adding weighted frequencies of the words that occur in that particular sentence. The following script calculates sentence scores:
+
 <pre>
 finalsentence = {}
 for sent in sentence_list:
