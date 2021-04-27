@@ -38,9 +38,9 @@ And also Corpus means a collection of text. It could be data sets of anything co
 ### Tokenizers
 Tokenization is the process by which a large quantity of text is divided into smaller parts called tokens.
 tokenizers – word, sentence, and regex tokenizer. In this project We will only use the word and sentence tokenizer this are the sub modules of  NLTK tokenize sentences.
-#### Tokenization of words**
+#### Tokenization of words
 We use the method word_tokenize() to split a sentence into words. The output of word tokenization can be converted to Data Frame for better text understanding in machine learning applications.
-#### Tokenization of Sentences**
+#### Tokenization of Sentences
 Sub-module available for the above is sent_tokenize it's used for when we need to count average words per sentence, For accomplishing such a task, we need both NLTK sentence tokenizer as well as NLTK word tokenizer to calculate the ratio, 
 Such output serves as an important feature for machine training as the answer would be numeric.
 
@@ -50,7 +50,7 @@ Such output serves as an important feature for machine training as the answer wo
 Preprocessing is the first step which are used to remove references from Our text file like Wikipedia article or refarance papers, references are enclosed in square brackets. The following script removes the square brackets and replaces the resulting multiple spaces by a single space. Take a look at the script below.
 
 <pre>
-### Removing Square Brackets and Extra Spaces
+# Removing Square Brackets and Extra Spaces
 mystring = re.sub(r'\[[0-9]*\]', ' ', mystring)
 mystring = re.sub(r'\s+', ' ', mystring)
 </pre>
