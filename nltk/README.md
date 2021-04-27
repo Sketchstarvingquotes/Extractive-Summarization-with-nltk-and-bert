@@ -18,13 +18,13 @@ pip install heapq_max
 
 ### importing required libraries
 <pre>
-* imprt re
-* import nltk
-* import heapq  
-* from nltk.corpus import stopwords
-* from nltk.tokenize import word_tokenize, sent_tokenize
-* nltk.download('punkt')
-* nltk.download('stopwords')
+imprt re
+import nltk
+import heapq  
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+nltk.download('punkt')
+nltk.download('stopwords')
 </pre>
 **Note:-** It's better to download nltk support libraries ontime of importing it such as nltk.download('punkt') And nltk.download('stopwords') both are support libraries of nltk.
 
