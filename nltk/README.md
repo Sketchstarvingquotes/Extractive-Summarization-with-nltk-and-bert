@@ -100,13 +100,13 @@ We have now calculated the weighted frequencies for all the words. Now is the ti
 <pre>
 finalsentence = {}
 for sent in sentence_list:
-for word in nltk.word_tokenize(sent.lower()):
-  if word in word_frequencies.keys():
-    if len(sent.split(' ')) < 25:
-      if sent not in finalsentence.keys():
-        finalsentence[sent] = word_frequencies[word]
-      else:
-        inalsentence[sent] += word_frequencies[word]
+   for word in nltk.word_tokenize(sent.lower()):
+       if word in word_frequencies.keys():
+           if len(sent.split(' ')) < 25:
+               if sent not in finalsentence.keys():
+                   finalsentence[sent] = word_frequencies[word]
+               else:
+                   inalsentence[sent] += word_frequencies[word]
 </pre>
 
 In the above code or script, we first create an empty finalsentence dictionary. The keys of this dictionary will be the sentences themselves and the values will be the corresponding scores of the sentences. Next, we loop through each sentence in the sentence_list and tokenize the sentence into words.
