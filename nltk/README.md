@@ -14,7 +14,7 @@ pip install nltk
 pip install heapq_max
 </pre>
 
-**Note:-** commands used for installations as per OS above commands are based on windows)
+**Note:-** commands used for installations as per OS above commands are based on windows
 
 ### importing required libraries
 <pre>
