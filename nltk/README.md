@@ -9,7 +9,7 @@ These extracted sentences would be the summary.
 
 ### required Installation
 <pre>
-python 3.6 vertion or above
+python 3.6 (version or above)
 pip install nltk 
 pip install heapq_max
 </pre>
